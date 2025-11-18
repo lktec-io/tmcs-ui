@@ -183,11 +183,10 @@ export default function Register() {
           </div>
         </div>
       )}
-
       <div className="bg-animation">
         <img src="./cross.webp" alt="bg1" />
         <img src="./cross.webp" alt="bg2" />
-        {/* <img src="./tucasa2.jpg" alt="bg1" /> */}
+        <img src="./cross.webp" alt="bg1" />
       </div>
     </div>
   );

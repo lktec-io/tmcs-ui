@@ -335,30 +335,6 @@ body,
   /* animation: typing 6s steps(30, end) infinite; */
 }
 
-/* the trailing dots (...) */
-/* .typing::after {
-  content: "...";
-  position: absolute;
-  right: -20px;
-  color: var(--accent);
-  opacity: 0.8;
-} */
-
-/* typing + deleting animation */
-/* @keyframes typing {
-  0% {
-    width: 0;
-  }
-  40% {
-    width: 100%;
-  }
-  60% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-} */
 
 /* responsiveness */
 @media (max-width: 600px) {
@@ -464,13 +440,11 @@ body,
   margin-left: 10px;
   background: rgba(0, 0, 0, 0.639);
   border: 1px solid rgba(202, 191, 191, 0.729);
-  padding: 8px 12px;
+  padding: 8px 15px;
   border-radius: 50%;
   font-size: 0.8em;
   font-weight: 100;
-  
 }
-
 
 
 .picha {
