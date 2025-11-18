@@ -89,7 +89,7 @@ export default function AllStudents() {
         </div>
 
         <div className="lastquote">
-          <p>TMCS-tia@2025</p>
+          <p>TMCS-TIA@2025</p>
         </div>
       </div>
 
