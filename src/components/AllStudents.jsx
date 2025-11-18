@@ -14,7 +14,7 @@ export default function AllStudents() {
   async function fetchStudents() {
     try {
       const res = await axios.get(
-        "https://registration.nardio.online/api/students"
+        "https://tmcs-tia.nardio.online/api/students"
       );
       setStudents(res.data);
     } catch (err) {
@@ -23,10 +23,9 @@ export default function AllStudents() {
       setLoading(false);
     }
   }
-
   const download = () => {
     window.location.href =
-      "https://registration.nardio.online/api/students/download";
+      "https://tmcs-tia.nardio.online/api/students/download";
   };
 
   return (

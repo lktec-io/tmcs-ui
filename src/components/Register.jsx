@@ -44,7 +44,7 @@ export default function Register() {
 
     setLoading(true);
     try {
-      await axios.post("https://registration.nardio.online/api/register", form);
+      await axios.post("https://tmcs-tia.nardio.online/api/register", form);
       setModalMsg("Registration Successful!✅");
       setForm({
         full_name: "",
