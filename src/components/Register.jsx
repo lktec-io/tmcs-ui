@@ -171,7 +171,7 @@ export default function Register() {
           </button>
         </form>
         <div className="lastquote">
-          <p>TMCS-TIA@2025</p>
+          <p>TMCS-tia@2025</p>
         </div>
       </div>
 
