@@ -11,6 +11,7 @@ export default function AllStudents() {
   useEffect(() => {
     fetchStudents();
   }, []);
+
   async function fetchStudents() {
     try {
       const res = await axios.get(
@@ -23,6 +24,7 @@ export default function AllStudents() {
       setLoading(false);
     }
   }
+
   const download = () => {
     window.location.href =
       "https://tmcs-tia.nardio.online/api/students/download";
@@ -37,6 +39,7 @@ export default function AllStudents() {
               <img className="picha" src={back} alt="back" />
             </div>
           </NavLink>
+
           <div className="top-row">
             <div className="total">Total Registered</div>
             <span className="count">{students.length}</span>
@@ -56,6 +59,8 @@ export default function AllStudents() {
               <div>Gender</div>
               <div>Address</div>
               <div>Baptism</div>
+              <div>Sacrament</div> {/* NEW */}
+              <div>Confirmation</div> {/* NEW */}
               <div>Course</div>
               <div>Year</div>
               <div>Leadership</div>
@@ -79,6 +84,9 @@ export default function AllStudents() {
                   >
                     {s.baptism_status}
                   </div>
+                  {/* NEW FIELDS */}
+                  <div>{s.sacrament}</div>
+                  <div>{s.confirmation}</div>
                   <div>{s.course}</div>
                   <div>{s.year_of_study}</div>
                   <div>{s.leadership_position}</div>
@@ -87,6 +95,7 @@ export default function AllStudents() {
             )}
           </div>
         </div>
+
         <div className="lastquote">
           <p>TMCS-TIA@2025</p>
         </div>

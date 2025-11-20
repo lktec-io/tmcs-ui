@@ -517,13 +517,27 @@ body,
 .thead,
 .row {
   display: grid;
-  grid-template-columns: 60px 200px 150px 200px 100px 120px 100px 100px 80px 150px;
+  grid-template-columns: 
+    60px   /* S/N */
+    200px  /* Name */
+    150px  /* Phone */
+    220px  /* Email */
+    100px  /* Gender */
+    120px  /* Address */
+    100px  /* Baptism */
+    120px  /* Sacrament (NEW) */
+    120px  /* Confirmation (NEW) */
+    100px  /* Course */
+    80px   /* Year */
+    150px; /* Leadership */
+    
   align-items: center;
   text-align: left;
-  gap: 5px;
-  width: max-content; /* ensures full width across scroll */
+  gap: 10px;
+  width: max-content;
   min-width: 100%;
 }
+
 
 .thead {
   background: rgba(255, 255, 255, 0.32);

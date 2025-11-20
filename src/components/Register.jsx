@@ -9,12 +9,15 @@ export default function Register() {
     gender: "",
     address: "",
     baptism_status: "",
+    sacrament: "", // NEW
+    confirmation: "", // NEW
     email: "",
     phone: "",
     course: "",
     year_of_study: "",
     leadership_position: "",
   });
+
   const [loading, setLoading] = useState(false);
   const [modalMsg, setModalMsg] = useState("");
 
@@ -30,11 +33,14 @@ export default function Register() {
       "gender",
       "address",
       "baptism_status",
+      "sacrament", // NEW
+      "confirmation", // NEW
       "email",
       "phone",
       "course",
       "year_of_study",
     ];
+
     const empty = requiredFields.some((f) => !form[f]);
 
     if (empty) {
@@ -71,7 +77,7 @@ export default function Register() {
         <div className="profileImage">
           <img alt="pcm" src={logo} />
         </div>
-        <h2 class="subtitle typing">TMCS-TIA MBEYA REGISTRATION</h2> 
+        <h2 class="subtitle typing">TMCS-TIA MBEYA REGISTRATION</h2>
 
         <form className="form" onSubmit={handleSubmit}>
           <label>
@@ -128,6 +134,32 @@ export default function Register() {
             <select
               name="baptism_status"
               value={form.baptism_status}
+              onChange={handleChange}
+            >
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+
+          <label>
+            Sacrament (Komunyo)
+            <select
+              name="sacrament"
+              value={form.sacrament}
+              onChange={handleChange}
+            >
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+
+          <label>
+            Confirmation (Kipaimara)
+            <select
+              name="confirmation"
+              value={form.confirmation}
               onChange={handleChange}
             >
               <option value="">Select</option>
