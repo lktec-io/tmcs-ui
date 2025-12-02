@@ -212,7 +212,7 @@ export default function Register() {
           </button>
         </form>
         <div className="lastquote">
-          <p>TMCS-tia@2025</p>
+          <p>tmcs-tia@2025</p>
         </div>
       </div>
 
